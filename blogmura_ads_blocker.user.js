@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blogmura Ads Blocker
 // @namespace    https://github.com/e2718281828nop3/
-// @version      0.1
+// @version      0.2
 // @description  block ads of blogmura
 // @author       e2718281828nop3
 // @copyright    2017, e2718281828nop3 (https://github.com/e2718281828nop3/)
