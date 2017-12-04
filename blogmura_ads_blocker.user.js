@@ -18,20 +18,24 @@
     window.addEventListener('load', function(){
 
         //logo
-        let logo = $('header-logo');
+        let logo = $id('header-logo');
         if (logo) logo.parentNode.removeChild(logo);
-        //if (logo) logo.style.display = 'none';
+
+        let headerMenuAd = $('div.header-menu-ad');
+        if (headerMenuAd) {
+          headerMenuAd.parentNode.removeChild(headerMenuAd);
+          $id('header-navi').style.margin = 0;
+        }
 
         //header ads
-        let adareas = $('header-wapper').$class('header-adarea');
-        //Array.prototype.forEach.call(adareas, function(adarea){adarea.parentNode.removeChild(adarea);});
-        adareas.each(function(adarea){adarea.parentNode.removeChild(adarea);});
-        //Array.prototype.forEach.call(adareas, function(adarea){adarea.style.display = 'none';});
+        $all('#header-wapper .header-adarea').each(function(ad){ad.parentNode.removeChild(ad);});
+
+        let adtext = $('.adtext');
+        if(adtext) adtext.parentNode.removeChild(adtext);
 
         ['footer', 'action'].forEach(function(id){
             let elem = $id(id);
-            if (!!elem) elem.parentNode.removeChild(elem);
-            //if (!!elem) elem.style.display = 'none';
+            if (elem) elem.parentNode.removeChild(elem);
         });
 
         ['entry-ad', 'adarea', 'widget-wapper grid ttl2Green'].forEach(function(klass){
