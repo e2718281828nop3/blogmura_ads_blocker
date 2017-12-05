@@ -29,21 +29,25 @@
         }
 
         //header ads
-        $all('#header-wapper .header-adarea').each(function(ad){ad.parentNode.removeChild(ad);});
+        $all('#header-wapper .header-adarea').each(ad => ad.parentNode.removeChild(ad));
 
         let adtext = $('.adtext');
-        if(adtext) adtext.parentNode.removeChild(adtext);
+        if(adtext){
+            let container = adtext.parentNode.parentNode;
+            container.parentNode.removeChild(container);
+        }
 
-        ['footer', 'action'].forEach(function(id){
+        ['footer', 'action'].forEach(id => {
             let elem = $id(id);
             if (elem) elem.parentNode.removeChild(elem);
         });
 
-        ['entry-ad', 'adarea', 'widget-wapper grid ttl2Green'].forEach(function(klass){
-            Array.prototype.forEach.call(document.getElementsByClassName(klass), function(elem){
-                elem.style.display='none';
-            });
+        ['entry-ad', 'adarea', 'widget-wapper grid ttl2Green'].forEach(klass => {
+            $class(klass).each(elem =>elem.style.display='none');
         });
+
+        //omake
+        $all('tr.title').each(e=>e.parentNode.removeChild(e));
 
     });
 
