@@ -1,3 +1,7 @@
+(function() {
+
+    'use strict';
+
 // ==UserScript==
 // @name         Blogmura Ads Blocker
 // @namespace    https://github.com/e2718281828nop3/
@@ -11,9 +15,6 @@
 // @require      https://github.com/e2718281828nop3/javascripts/raw/master/utilities/ext/array.js
 // @require      https://github.com/e2718281828nop3/javascripts/raw/master/utilities/ext/dom.js
 // ==/UserScript==
-
-(function() {
-    'use strict';
 
     window.addEventListener('load', function(){
 
