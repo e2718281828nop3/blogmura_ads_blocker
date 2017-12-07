@@ -1,0 +1,23 @@
+{
+  "name": "blogmura_ads_blocker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "blogmura_ads_blocker.user.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e2718281828nop3/blogmura_ads_blocker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e2718281828nop3/blogmura_ads_blocker/issues"
+  },
+  "homepage": "https://github.com/e2718281828nop3/blogmura_ads_blocker#readme",
+  "devDependencies": {
+    "eslint": "^4.12.1"
+  }
+}
