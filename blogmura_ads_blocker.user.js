@@ -49,6 +49,8 @@
         //omake
         $all('tr.title').each(e=>e.parentNode.removeChild(e));
 
+        let elem = $id('adingoFluctBottomtracking_1000140241');
+        if (elem) elem.style.visibility = 'hidden';
     });
 
 })();
